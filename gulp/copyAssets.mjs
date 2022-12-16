@@ -13,7 +13,9 @@ const copy = () =>
     'source/**.html',
     'source/fonts/**',
     'source/img/**',
-    'source/favicon/**'
+    'source/favicon/**',
+    'sourse/manifest.webmanifest',
+    'sourse/favicon-arctic.ico'
   ], {
     base: 'source',
   })
