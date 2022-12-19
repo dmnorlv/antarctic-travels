@@ -1,0 +1,176 @@
+.products {
+  padding-top: 90px;
+  padding-bottom: 120px;
+
+  @media (max-width: 1125px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.products__wrapper {
+  max-width: 1130px;
+  min-height: 270px;
+}
+
+.products__wrapper h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(239px, 1fr));
+  align-items: center;
+  gap: 30px;
+
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (max-width: 1125px) {
+    gap: 13px;
+  }
+}
+
+.products__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  height: 386px;
+
+  padding: 30px;
+  padding-bottom: 25px;
+
+  background-color: transparent;
+
+  color: $color-alice-blue;
+
+  overflow-y: auto;
+}
+
+.products__card:hover {
+  padding: 30px 25px;
+  padding-bottom: 35px;
+
+  background-color: $color-tangaroa;
+
+  overflow-y: auto;
+}
+
+.products__card h3 {
+  order: 1;
+
+  margin: 0;
+  margin-top: auto;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.products__card h3 br {
+
+}
+
+.products__card:hover h3 {
+  order: 0;
+
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.products__card-list {
+  position: absolute;
+  z-index: -2;
+
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.products__card:hover .products__card-list {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 25px;
+}
+
+.products__card-item {
+  margin-bottom: 15px;
+}
+
+.products__card-item--port {
+  margin-bottom: 10px;
+}
+
+.products__card-item--price {
+  margin-bottom: 0;
+}
+
+.products__card-item--days {
+  margin-bottom: 12px;
+}
+
+.products__card-item h4 {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-bottom: 4px;
+}
+
+.products__card-item p {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-quartz;
+}
+
+.products__card-link {
+  position: relative;
+  z-index: -2;
+  display: block;
+
+  width: 100%;
+  padding: 0 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $color-tangaroa;
+  background-color: $color-alice-blue;
+  text-align: center;
+}
+
+.products__card:hover .products__card-link {
+  z-index: 0;
+
+  margin-top: auto;
+}
+
+.products__card-background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  background-color: lighten($color-tangaroa, 20%);
+}

@@ -1,0 +1,63 @@
+.advantages {
+  background-color: $color-solitude;
+
+  padding-top: 115px;
+  padding-bottom: 120px;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__wrapper h2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+
+  text-align: center;
+
+  margin-bottom: 55px;
+}
+
+.advantages__card {
+  background-color: $color-alice-blue;
+
+  padding: 30px;
+
+  width: percentage(calc(360 / $content-width-dp));
+  max-width: 360px;
+  min-height: 240px;
+}
+
+.advantages__card h3 {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  margin-bottom: 10px;
+}
+
+.advantages__card p {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.advantages__card-icon {
+  fill: $color-tangaroa;
+
+  margin-bottom: 15px;
+}
+

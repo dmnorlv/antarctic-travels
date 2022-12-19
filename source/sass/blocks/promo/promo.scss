@@ -1,0 +1,41 @@
+.promo {
+  padding-top: 112px;
+  padding-bottom: 145px;
+}
+
+.promo__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.promo__wrapper picture,
+.promo__wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.promo__info-wrapper {
+  max-width: 512px;
+  width: percentage(calc(512 / $content-width-dp));
+}
+
+.promo__info-wrapper h2,
+.promo__info-wrapper p {
+  margin: 0;
+}
+
+.promo__info-wrapper h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+
+  margin-bottom: 29px;
+}
+
+.promo__img-container {
+  max-width: 560px;
+  width: percentage(calc(560 / $content-width-dp));
+
+  margin-left: auto;
+}
