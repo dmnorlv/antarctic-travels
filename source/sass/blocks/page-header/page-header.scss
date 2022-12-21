@@ -85,3 +85,14 @@
   color: $color-alice-blue;
   font-weight: 500;
 }
+
+.page-header__link:hover,
+.page-header__link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.page-header__link:active {
+  text-decoration: none;
+  opacity: 0.6;
+}
