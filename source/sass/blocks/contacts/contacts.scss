@@ -73,9 +73,21 @@
   font-style: normal;
 }
 
-.contacts__item a {
+.contacts__link {
   display: flex;
   align-items: flex-start;
+  width: max-content;
 
   color: $color-tangaroa;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.contacts__link:active {
+  text-decoration: none;
+  opacity: 0.6;
 }

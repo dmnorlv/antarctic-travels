@@ -6,6 +6,7 @@
   padding-bottom: 35px;
 
   background-color: transparent;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .page-header__background {
@@ -72,6 +73,7 @@
   max-width: 1090px;
   margin-left: auto;
   margin-top: -5px;
+  padding-left: 30px;
 
   display: flex;
   flex-wrap: wrap;

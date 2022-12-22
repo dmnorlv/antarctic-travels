@@ -76,19 +76,22 @@
   margin-bottom: 12px;
 }
 
-.feedback__form input[type="text"],
-.feedback__form input[type="tel"],
-.feedback__form input[type="email"] {
+.feedback__user-field input {
   padding: 13px 16px;
   padding-bottom: 12px;
   border: none;
+  width: 100%;
 
   font-size: 14px;
   line-height: 18px;
   color: $color-tangaroa;
 }
 
-.feedback__form input::placeholder {
+.feedback__user-field input:hover {
+  background-color: #a5d1f9;
+}
+
+.feedback__user-field input::placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
@@ -107,6 +110,20 @@
   text-align: center;
 
   background-color: $color-alice-blue;
+}
+
+.feedback__form button:hover {
+  background-color: #a7d0f9;
+}
+
+.feedback__form button:focus {
+  outline: auto;
+}
+
+.feedback__form button:active {
+  background-color: $color-alice-blue;
+  opacity: 0.6;
+  outline: none;
 }
 
 
