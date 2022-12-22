@@ -87,13 +87,13 @@
               transparent percentage(calc(60 / (1366 - 103 * 2))) + percentage(calc(40 / (1366 - 103 * 2))));
 
   @include vp-1023 {
-    left: percentage(50 / 770);
-    right: percentage(50 / 770);
+    left: percentage(45 / 768);
+    right: percentage(45 / 768);
     background: repeating-linear-gradient(90deg,
               #ff0000 0,
-              #ff0000 percentage(calc(145 / (770 - 50 * 2))),
-              transparent percentage(calc(145 / (770 - 50 * 2))),
-              transparent percentage(calc(145 / (770 - 50 * 2))) + percentage(calc(30 / (770 - 50 * 2))));
+              #ff0000 percentage(calc(88 / (768 - 45 * 2))),
+              transparent percentage(calc(88 / (768 - 45 * 2))),
+              transparent percentage(calc(88 / (768 - 45 * 2))) + percentage(calc(30 / (768 - 45 * 2))));
   }
 
   @include vp-767 {

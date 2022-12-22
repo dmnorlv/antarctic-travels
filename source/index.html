@@ -22,7 +22,9 @@
   <div class="wrapper">
     <header class="header page-header container">
       <picture>
-        <source srcset="img/desktop/header-bg-desktop-1x.webp 1x, img/desktop/header-bg-desktop-2x.webp 2x"
+        <source media="(min-width: 1024px)" srcset="img/desktop/header-bg-desktop-1x.webp 1x, img/desktop/header-bg-desktop-2x.webp 2x"
+          type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/tablet/header-bg-tablet-1x.webp 1x, img/tablet/header-bg-tablet-2x.webp 2x"
           type="image/webp">
         <img class="page-header__background" aria-hidden="true" src="img/desktop/header-bg-desktop-1x.jpg"
           srcset="img/desktop/header-bg-desktop-2x.jpg 2x" loading="lazy">
