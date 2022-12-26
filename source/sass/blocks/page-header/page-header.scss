@@ -67,18 +67,6 @@
   }
 }
 
-.overflowed::before {
-  @include vp-767 {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.5;
-    z-index: 0;
-    background-color: #002b66;
-  }
-}
-
 .page-header__text-content-wrapper {
   width: 91.8%;
   margin-left: auto;

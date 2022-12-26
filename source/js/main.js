@@ -11,13 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-  if (document.querySelector('.page-header__nav') && document.querySelector('.page-header__toggle')) {
-    const nav = document.querySelector('.page-header__nav');
-    const button = document.querySelector('.page-header__toggle');
-    const body = document.querySelector('body');
+  initBurgerMenu();
 
-    initBurgerMenu(body, nav, button);
-  }
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
