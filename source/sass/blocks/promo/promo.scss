@@ -1,11 +1,29 @@
 .promo {
-  padding-top: 112px;
+  padding-top: 120px;
   padding-bottom: 145px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 93px;
+  }
+
+  @include vp-767 {
+    padding-top: 62px;
+    padding-bottom: 85px;
+  }
 }
 
 .promo__wrapper {
   display: flex;
   align-items: center;
+
+  @include vp-1023 {
+    align-items: flex-start;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .promo__wrapper picture,
@@ -18,6 +36,15 @@
 .promo__info-wrapper {
   max-width: 512px;
   width: percentage(calc(512 / $content-width-dp));
+
+  @include vp-1023 {
+    width: percentage(calc(324 / $content-width-tb));
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 45px;
+  }
 }
 
 .promo__info-wrapper h2,
@@ -33,6 +60,21 @@
   line-height: 32px;
 
   margin-bottom: 29px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    width: percentage(calc(205 / 324));
+  }
+
+  @include vp-767 {
+    width: percentage(calc(190 / $content-width-ml));
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 16px;
+  }
 }
 
 .promo__img-container {
@@ -40,4 +82,16 @@
   width: percentage(calc(560 / $content-width-dp));
 
   margin-left: auto;
+
+  @include vp-1023 {
+    width: percentage(calc(324 / $content-width-tb));
+    margin-right: 5px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

@@ -6,6 +6,16 @@
   padding-bottom: 50px;
 
   background-color: transparent;
+
+  @include vp-1023 {
+    padding-top: 93px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
 }
 
 .feedback__background {
@@ -25,12 +35,29 @@
 .feedback__wrapper {
   display: flex;
   max-width: $content-width-dp - 60*2px;
+
+  @include vp-1023 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .feedback__text {
   max-width: 493 + 80px;
 
   padding-top: 170px;
+
+  @include vp-1023 {
+    text-align: center;
+    width: percentage(calc(419 / $content-width-tb));
+    margin-bottom: 54px;
+    padding-top: 0;
+  }
+
+  @include vp-767 {
+    width: percentage(calc(258 / $content-width-ml));
+    margin-bottom: 36px;
+  }
 }
 
 .feedback__text h2 {
@@ -40,6 +67,18 @@
   line-height: 44px;
 
   margin-bottom: 16px;
+
+  @include vp-1023 {
+    font-size: 34px;
+    line-height: 38px;
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 14px;
+  }
 }
 
 .feedback__text p {
@@ -47,12 +86,33 @@
 
   font-size: 18px;
   line-height: 26px;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.feedback__text br {
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .feedback__form {
   max-width: 403px;
 
   margin-left: auto;
+
+  @include vp-1023 {
+    margin: 0;
+    max-width: none;
+    width: percentage(calc(403 / $content-width-tb));
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .feedback__form form {
@@ -64,6 +124,11 @@
 
   background-color: $color-tangaroa;
   color: $color-alice-blue;
+
+  @include vp-767 {
+    padding: 40px 30px;
+    padding-top: 35px;
+  }
 }
 
 .feedback__form p {
@@ -74,6 +139,11 @@
   line-height: 24px;
 
   margin-bottom: 12px;
+
+  @include vp-767 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
 .feedback__user-field input {
@@ -134,6 +204,11 @@
   align-items: center;
 
   margin-bottom: 10px;
+
+  @include vp-767 {
+    margin-top: -3px;
+    margin-bottom: 6px;
+  }
 }
 
 .feedback__accept-container span {
@@ -143,6 +218,11 @@
   height: 18px;
 
   background-color: $color-alice-blue;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .feedback__accept-container:hover span {
@@ -179,6 +259,10 @@
   line-height: 14px;
 
   margin-left: 5px;
+
+  @include vp-767 {
+    margin-left: 8px;
+  }
 }
 
 .feedback__accept-container:hover div,

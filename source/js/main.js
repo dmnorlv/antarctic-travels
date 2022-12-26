@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import {initBurgerMenu} from './modules/burger-menu';
 
 // ---------------------------------
 
@@ -11,12 +11,19 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  if (document.querySelector('.page-header__nav') && document.querySelector('.page-header__toggle')) {
+    const nav = document.querySelector('.page-header__nav');
+    const button = document.querySelector('.page-header__toggle');
+    const body = document.querySelector('body');
+
+    initBurgerMenu(body, nav, button);
+  }
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+
   });
 });
 

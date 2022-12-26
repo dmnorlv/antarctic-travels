@@ -1,10 +1,24 @@
 .contacts {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
+
+  @include vp-767 {
+    padding-top: 58px;
+    padding-bottom: 44px;
+  }
 }
 
 .contacts__wrapper {
   display: flex;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .contacts__map {
@@ -12,6 +26,16 @@
   max-width: 560px;
   width: percentage(calc(560 / $content-width-dp));
   background-color: transparent;
+
+  @include vp-1023 {
+    max-width: none;
+    width: percentage(calc(324 / $content-width-tb));
+  }
+
+  @include vp-767 {
+    order: 1;
+    width: 100%;
+  }
 }
 
 .contacts__map-background {
@@ -32,6 +56,10 @@
   border: none;
   display: block;
   width: 100%;
+
+  @include vp-1023 {
+    height: 335px;
+  }
 }
 
 .contacts__text {
@@ -40,6 +68,18 @@
   margin-left: auto;
 
   padding-top: 76px;
+
+  @include vp-1023 {
+    max-width: none;
+    width: percentage(calc(324 / $content-width-tb));
+    padding-top: 67px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__text p {
@@ -49,6 +89,11 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
+
+  @include vp-1023 {
+    line-height: 27px;
+    margin-bottom: 26px;
+  }
 }
 
 .contacts__list {
@@ -71,6 +116,16 @@
 
 .contacts__item address {
   font-style: normal;
+
+  @include vp-1023 {
+    line-height: 24px;
+  }
+}
+
+.contacts__item--address .contacts__icon {
+  @include vp-1023 {
+    margin-top: 5px;
+  }
 }
 
 .contacts__link {

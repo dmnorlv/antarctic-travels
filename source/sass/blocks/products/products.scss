@@ -6,6 +6,16 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  @include vp-1023 {
+    padding-top: 94px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
 }
 
 .products__wrapper {
@@ -21,7 +31,19 @@
   line-height: 32px;
 
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 54px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 34px;
+  }
 }
 
 .products__list {
@@ -36,6 +58,18 @@
 
   @media (max-width: 1125px) {
     gap: 13px;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, minmax(309px, 1fr));
+    gap: 30px;
+    width: percentage(calc(648 / $content-width-tb));
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    grid-template-columns: minmax(270px, 1fr);
+    width: percentage(calc(270 / $content-width-ml));
   }
 }
 
@@ -54,6 +88,16 @@
   color: $color-alice-blue;
 
   overflow-y: auto;
+
+  @include vp-1023 {
+    padding: 35px;
+    padding-bottom: 32px;
+  }
+
+  @include vp-767 {
+    padding: 25px;
+    padding-bottom: 20px;
+  }
 }
 
 .products__card:hover,
@@ -64,6 +108,16 @@
   background-color: $color-tangaroa;
 
   overflow-y: auto;
+
+  @include vp-1023 {
+    padding: 35px;
+    padding-top: 30px;
+  }
+
+  @include vp-767 {
+    padding: 35px 25px;
+    padding-top: 32px;
+  }
 }
 
 .products__card h3 {

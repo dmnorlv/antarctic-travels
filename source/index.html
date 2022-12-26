@@ -26,10 +26,13 @@
           type="image/webp">
         <source media="(min-width: 768px)" srcset="img/tablet/header-bg-tablet-1x.webp 1x, img/tablet/header-bg-tablet-2x.webp 2x"
           type="image/webp">
+        <source media="(min-width: 320px)" srcset="img/mobile/header-bg-mobile-1x.webp 1x, img/mobile/header-bg-mobile-2x.webp 2x"
+          type="image/webp">
         <img class="page-header__background" aria-hidden="true" src="img/desktop/header-bg-desktop-1x.jpg"
           srcset="img/desktop/header-bg-desktop-2x.jpg 2x" loading="lazy">
       </picture>
-      <div class="content-wrapper">
+      <div class="page-header__wrapper content-wrapper">
+
         <nav class="page-header__nav">
           <a class="page-header__logo-link">
             <svg class="page-header__logo-icon" width="70" height="38">
@@ -50,7 +53,9 @@
               <a class="page-header__link" href="#contacts">Контакты</a>
             </li>
           </ul>
+          <button class="page-header__toggle" type="button"></button>
         </nav>
+
         <div class="page-header__text-content-wrapper">
           <h1 class="page-header__title">Круизы в&nbsp;Антарктику</h1>
           <p class="page-header__description">Волшебный мир айсбергов и&nbsp;пингвинов</p>
@@ -68,7 +73,11 @@
           </div>
           <div class="promo__img-container">
             <picture>
-              <source srcset="img/desktop/pingvi-promo-desktop-1x.webp 1x, img/desktop/pingvi-promo-desktop-2x.webp 2x"
+              <source media="(min-width: 1024px)" srcset="img/desktop/pingvi-promo-desktop-1x.webp 1x, img/desktop/pingvi-promo-desktop-2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/tablet/pingvi-promo-tablet-1x.webp 1x, img/tablet/pingvi-promo-tablet-2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 320px)" srcset="img/mobile/pingvi-promo-mobile-1x.webp 1x, img/tablet/pingvi-promo-mobile-2x.webp 2x"
                 type="image/webp">
               <img src="img/desktop/pingvi-promo-desktop-1x.jpg" srcset="img/desktop/pingvi-promo-desktop-2x.jpg 2x"
                 width="560" height="301" alt="Пингвины." loading="lazy">
@@ -78,7 +87,11 @@
       </section>
       <section class="advantages container" id="advantages">
         <picture>
-          <source srcset="img/desktop/advantages-bg-desktop-1x.webp 1x, img/desktop/advantages-bg-desktop-2x.webp 2x"
+          <source media="(min-width: 1024px)" srcset="img/desktop/advantages-bg-desktop-1x.webp 1x, img/desktop/advantages-bg-desktop-2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/tablet/advantages-bg-tablet-1x.webp 1x, img/tablet/advantages-bg-tablet-2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 320px)" srcset="img/mobile/advantages-bg-mobile-1x.webp 1x, img/tablet/advantages-bg-mobile-2x.webp 2x"
             type="image/webp">
           <img class="advantages__background" src="img/desktop/advantages-bg-desktop-1x.jpg"
             srcset="img/desktop/advantages-bg-desktop-2x.jpg 2x" loading="lazy" aria-hidden="true">
@@ -86,7 +99,7 @@
         <div class="content-wrapper advantages__wrapper">
           <h2 class="advantages__title">Преимущества</h2>
           <ul class="advantages__list">
-            <li class="advantages__card">
+            <li class="advantages__card advantages__card--first">
               <svg class="advantages__card-icon" width="27" height="32">
                 <use xlink:href="img/sprite.svg#ship"></use>
               </svg>
@@ -96,17 +109,17 @@
                 и&nbsp;даст возможность насладиться видами и&nbsp;природой.
               </p>
             </li>
-            <li class="advantages__card">
+            <li class="advantages__card advantages__card--second">
               <svg class="advantages__card-icon" width="38" height="32">
                 <use xlink:href="img/sprite.svg#galochka"></use>
               </svg>
-              <h3 class="advantages__card-title">Система все включено</h3>
+              <h3 class="advantages__card-title">Система все&nbsp;включено</h3>
               <p class="advantages__card-description">
                 Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда
                 и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.
               </p>
             </li>
-            <li class="advantages__card">
+            <li class="advantages__card advantages__card--third">
               <svg class="advantages__card-icon" width="44" height="32">
                 <use xlink:href="img/sprite.svg#ship2"></use>
               </svg>
@@ -126,7 +139,9 @@
           <ul class="products__list">
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-1-1x.webp 1x, img/desktop/product-1-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-1-1x.webp 1x, img/desktop/product-1-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-1-1x.webp 1x, img/tablet/product-1-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-1-1x.webp 1x, img/mobile/product-1-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-1-1x.jpg"
                   srcset="img/desktop/product-1-2x.jpg 2x" loading="lazy">
               </picture>
@@ -154,7 +169,9 @@
             </li>
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-2-1x.webp 1x, img/desktop/product-2-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-2-1x.webp 1x, img/desktop/product-2-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-2-1x.webp 1x, img/tablet/product-2-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-2-1x.webp 1x, img/mobile/product-2-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-2-1x.jpg"
                   srcset="img/desktop/product-2-2x.jpg 2x" loading="lazy">
               </picture>
@@ -182,7 +199,9 @@
             </li>
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-3-1x.webp 1x, img/desktop/product-3-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-3-1x.webp 1x, img/desktop/product-3-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-3-1x.webp 1x, img/tablet/product-3-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-3-1x.webp 1x, img/mobile/product-3-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-3-1x.jpg"
                   srcset="img/desktop/product-3-2x.jpg 2x" loading="lazy">
               </picture>
@@ -210,7 +229,9 @@
             </li>
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-4-1x.webp 1x, img/desktop/product-4-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-4-1x.webp 1x, img/desktop/product-4-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-4-1x.webp 1x, img/tablet/product-4-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-4-1x.webp 1x, img/mobile/product-4-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-4-1x.jpg"
                   srcset="img/desktop/product-4-2x.jpg 2x" loading="lazy">
               </picture>
@@ -237,7 +258,9 @@
             </li>
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-5-1x.webp 1x, img/desktop/product-5-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-5-1x.webp 1x, img/desktop/product-5-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-5-1x.webp 1x, img/tablet/product-5-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-5-1x.webp 1x, img/mobile/product-5-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-5-1x.jpg"
                   srcset="img/desktop/product-5-2x.jpg 2x">
               </picture>
@@ -265,7 +288,9 @@
             </li>
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-6-1x.webp 1x, img/desktop/product-6-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-6-1x.webp 1x, img/desktop/product-6-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-6-1x.webp 1x, img/tablet/product-6-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-6-1x.webp 1x, img/mobile/product-6-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-6-1x.jpg"
                   srcset="img/desktop/product-6-2x.jpg 2x" loading="lazy">
               </picture>
@@ -292,7 +317,9 @@
             </li>
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-2-1x.webp 1x, img/desktop/product-2-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-2-1x.webp 1x, img/desktop/product-2-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-2-1x.webp 1x, img/tablet/product-2-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-2-1x.webp 1x, img/mobile/product-2-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-2-1x.jpg"
                   srcset="img/desktop/product-2-2x.jpg 2x">
               </picture>
@@ -319,7 +346,9 @@
             </li>
             <li class="products__card" tabindex="-1">
               <picture>
-                <source srcset="img/desktop/product-8-1x.webp 1x, img/desktop/product-8-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/desktop/product-8-1x.webp 1x, img/desktop/product-8-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/tablet/product-8-1x.webp 1x, img/tablet/product-8-2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/mobile/product-8-1x.webp 1x, img/mobile/product-8-2x.webp 2x" type="image/webp">
                 <img class="products__card-background" aria-hidden="true" src="img/desktop/product-8-1x.jpg"
                   srcset="img/desktop/product-8-2x.jpg 2x" loading="lazy">
               </picture>
@@ -349,7 +378,11 @@
       </section>
       <section class="feedback container">
         <picture>
-          <source srcset="img/desktop/feedback-bg-desktop-1x.webp 1x, img/desktop/feedback-bg-desktop-2x.webp 2x"
+          <source media="(min-width: 1024px)" srcset="img/desktop/feedback-bg-desktop-1x.webp 1x, img/desktop/feedback-bg-desktop-2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/tablet/feedback-bg-tablet-1x.webp 1x, img/tablet/feedback-bg-tablet-2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 320px)" srcset="img/mobile/feedback-bg-mobile-1x.webp 1x, img/mobile/feedback-bg-mobile-2x.webp 2x"
             type="image/webp">
           <img class="feedback__background" aria-hidden="true" src="img/desktop/feedback-bg-desktop-1x.jpg"
             srcset="img/desktop/feedback-bg-desktop-2x.jpg 2x" loading="lazy">
@@ -379,7 +412,7 @@
                 <svg width="12" height="8">
                   <use xlink:href="img/sprite.svg#accept"></use>
                 </svg>
-                <div>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</div>
+                <div>Я&nbsp;согласен на&nbsp;обработку<br> моих персональных данных</div>
               </label>
 
               <button type="submit">Оставить заявку</button>
@@ -392,7 +425,9 @@
         <div class="contacts__wrapper content-wrapper">
           <div class="contacts__map">
             <picture>
-              <source srcset="img/desktop/map-desktop-1x.webp 1x, img/desktop/map-desktop-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/desktop/map-desktop-1x.webp 1x, img/desktop/map-desktop-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/tablet/map-tablet-1x.webp 1x, img/tablet/map-tablet-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 320px)" srcset="img/mobile/map-mobile-1x.webp 1x, img/mobile/map-mobile-2x.webp 2x" type="image/webp">
               <img class="contacts__map-background" src="img/desktop/map-desktop-1x.jpg"
                 srcset="img/desktop/map-desktop-2x.jpg 2x" aria-hidden="true" loading="lazy">
             </picture>
@@ -410,7 +445,7 @@
                 <svg class="contacts__icon" width="18" height="22">
                   <use xlink:href="img/sprite.svg#tag"></use>
                 </svg>
-                <address>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+                <address>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</address>
               </li>
               <li class="contacts__item">
 

@@ -66,6 +66,10 @@
   transition: none !important;
 }
 
+.overflowed {
+  overflow: hidden;
+}
+
 .is-grid {
   position: relative;
 }
