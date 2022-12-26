@@ -211,7 +211,7 @@
   }
 }
 
-.feedback__accept-container span {
+.feedback__accept-container span:first-of-type {
   display: block;
 
   width: 18px;
@@ -225,7 +225,7 @@
   }
 }
 
-.feedback__accept-container:hover span {
+.feedback__accept-container:hover span:first-of-type {
   background-color: $color-tangaroa;
   outline: 1px solid $color-alice-blue;
   outline-offset: -1px;
@@ -254,7 +254,8 @@
   stroke: $color-alice-blue;
 }
 
-.feedback__accept-container div {
+.feedback__accept-container span:last-of-type {
+  display: block;
   font-size: 10px;
   line-height: 14px;
 
@@ -265,12 +266,12 @@
   }
 }
 
-.feedback__accept-container:hover div,
-.feedback__accept-container:focus-within div {
+.feedback__accept-container:hover span:last-of-type,
+.feedback__accept-container:focus-within span:last-of-type {
   text-decoration: underline;
 }
 
-.feedback__accept-container:focus-within span {
+.feedback__accept-container:focus-within span:first-of-type {
   outline: 1px solid $color-alice-blue;
   outline-offset: -1px;
   background-color: $color-tangaroa;
@@ -279,4 +280,3 @@
 .feedback__accept-container:active {
   opacity: 0.6;
 }
-

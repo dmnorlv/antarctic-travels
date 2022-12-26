@@ -38,5 +38,4 @@ const initBurgerMenu = () => {
   }
 };
 
-
 export {initBurgerMenu};
