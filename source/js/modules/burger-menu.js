@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
 const nav = document.querySelector('.page-header__nav');
-const links = document.querySelectorAll('.page-header__link--taged');
+const links = document.querySelectorAll('.page-header__link-taged');
 const button = document.querySelector('.page-header__toggle');
 
 const onLinkClick = () => {
