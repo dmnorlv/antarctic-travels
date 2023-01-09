@@ -41,16 +41,16 @@
           </a>
           <ul class="page-header__menu">
             <li class="page-header__item">
-              <a class="page-header__link page-header__link--taged" href="#advantages">Преимущества</a>
+              <a class="page-header__link--taged" href="#advantages">Преимущества</a>
             </li>
             <li class="page-header__item">
-              <a class="page-header__link" href="#">Направления</a>
+              <a href="#">Направления</a>
             </li>
             <li class="page-header__item">
-              <a class="page-header__link page-header__link--taged" href="#products">Ближайшие круизы</a>
+              <a class="page-header__link--taged" href="#products">Ближайшие круизы</a>
             </li>
             <li class="page-header__item">
-              <a class="page-header__link page-header__link--taged" href="#contacts">Контакты</a>
+              <a class="page-header__link--taged" href="#contacts">Контакты</a>
             </li>
           </ul>
           <button class="page-header__toggle" type="button"></button>
@@ -63,8 +63,7 @@
       </div>
     </header>
     <main>
-      <section class="promo container">
-        <div class="content-wrapper promo__wrapper">
+        <div class="promo container content-wrapper promo__wrapper">
           <div class="promo__info-wrapper">
             <h2 class="promo__title">Путешествие на&nbsp;край Земли</h2>
             <p class="promo__info">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром
@@ -87,7 +86,6 @@
             </picture>
           </div>
         </div>
-      </section>
       <section class="advantages container" id="advantages">
         <picture>
           <source media="(min-width: 1024px)"
@@ -433,7 +431,7 @@
                 <input type="text" placeholder="Имя" name="user-name" required>
               </div>
               <div class="feedback__user-field">
-                <input type="tel" placeholder="Телефон" name="user-tel" pattern="\+?[\(\)\d\s\-]{7,}" required>
+                <input type="tel" placeholder="Телефон" name="user-tel" required data-tel-input>
               </div>
               <div class="feedback__user-field">
                 <input type="email" placeholder="Email" name="user-mail" required>

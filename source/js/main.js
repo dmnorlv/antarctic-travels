@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initBurgerMenu} from './modules/burger-menu';
+import {initPhoneInput} from './modules/phone-input';
 
 // ---------------------------------
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   initBurgerMenu();
+  initPhoneInput();
 
   // ---------------------------------
 

@@ -193,7 +193,7 @@
   }
 }
 
-.page-header__link {
+.page-header__item a {
   display: block;
 
   color: $color-alice-blue;
@@ -205,7 +205,7 @@
   }
 }
 
-.page-header__nav--opened .page-header__link {
+.page-header__nav--opened .page-header__item a {
   @include vp-767 {
     font-size: 18px;
     line-height: 24px;
@@ -215,13 +215,13 @@
   }
 }
 
-.page-header__link:hover,
-.page-header__link:focus {
+.page-header__item a:hover,
+.page-header__item a:focus {
   text-decoration: underline;
   outline: none;
 }
 
-.page-header__link:active {
+.page-header__item a:active {
   text-decoration: none;
   opacity: 0.6;
 }
