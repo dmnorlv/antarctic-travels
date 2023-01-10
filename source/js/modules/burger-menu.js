@@ -14,6 +14,7 @@ function closeMenu() {
   links.forEach((link) => {
     link.removeEventListener('click', onLinkClick);
   });
+  document.removeEventListener('click', onOverlayClick);
 }
 
 const openMenu = () => {
@@ -23,6 +24,7 @@ const openMenu = () => {
   links.forEach((link) => {
     link.addEventListener('click', onLinkClick);
   });
+  document.addEventListener('click', onOverlayClick);
 };
 
 const initBurgerMenu = () => {
@@ -37,5 +39,12 @@ const initBurgerMenu = () => {
     });
   }
 };
+
+function onOverlayClick(evt) {
+  evt.preventDefault();
+  if (!evt.target.closest('nav')) {
+    closeMenu();
+  }
+}
 
 export {initBurgerMenu};

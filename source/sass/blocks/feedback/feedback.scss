@@ -89,6 +89,14 @@
   }
 }
 
+.feedback__accept-container br {
+  display: none;
+
+  @include vp-767 {
+    display: inline;
+  }
+}
+
 .feedback__form {
   max-width: 403px;
 
